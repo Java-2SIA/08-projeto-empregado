@@ -13,7 +13,7 @@ public class EComissionado extends Empregado{
     public String getDados(){
         DecimalFormat df = new DecimalFormat("#,##0.00");
         String aux = super.getDados();
-        aux += "Total de vendas: " + df.format(totalDeVendas) + "\n";
+        aux += "Total de vendas: R$" + df.format(totalDeVendas) + "\n";
         aux += "Comissão: " + df.format(comissao) + "%\n";
         return aux;
     }
